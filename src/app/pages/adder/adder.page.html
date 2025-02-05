@@ -10,10 +10,19 @@
       <ion-title size="large">Sumadora</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-input [(ngModel)]="num1" placeholder="Primer numero"></ion-input>
-  <ion-input [(ngModel)]="num2" placeholder="Segundo numero"></ion-input>
-  <ion-button (click)="sumar(num1, num2)">Sumar</ion-button>
-  <ion-item>
-    <ion-textarea [readonly]="true" label="Resultado:">{{ result }}</ion-textarea>
-  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="num1" placeholder="Primer numero"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="num2" placeholder="Segundo numero"></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-button (click)="sumar(num1, num2)">Sumar</ion-button>
+    </ion-list>
+     <ion-item>
+      <ion-label>Resultado:</ion-label>
+      <ion-textarea [readonly]="true" label="Resultado:">{{ result }}</ion-textarea>
+    </ion-item>
+  </ion-list>
 </ion-content>
