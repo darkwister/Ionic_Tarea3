@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonItem, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCard, IonButton, IonInput, IonList, IonContent, IonHeader, IonTitle, IonToolbar, IonLabel } from '@ionic/angular/standalone';
@@ -10,14 +10,9 @@ import { IonItem, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, 
   standalone: true,
   imports: [ IonItem, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCard, IonButton, IonLabel, IonInput, IonList, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonLabel]
 })
-export class TranslateNumbersPage implements OnInit {
+export class TranslateNumbersPage{
   inputNumber?: number;
   outputText?: string;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   convertNumberToWords(number: number): string {
     const ones = ["", "Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve", "Diez", "Once", "Doce", "Trece", "Catorce", "Quince", "Dieciséis", "Diecisiete", "Dieciocho", "Diecinueve"];
