@@ -10,4 +10,22 @@
       <ion-title size="large">Traductor de numeros</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Traductor</ion-card-title>
+      <ion-card-subtitle>Ingrese un número (1 - 1000):</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-input [(ngModel)]="inputNumber" type="number" placeholder="Ej: 345"></ion-input>   
+      </ion-item>
+      <ion-item>
+        <ion-label>Resultado: {{ outputText }}</ion-label>
+      </ion-item>
+    </ion-card-content>
+    <ion-button fill="clear" (click)="translate()">Converitr</ion-button>
+  </ion-card>
+
 </ion-content>

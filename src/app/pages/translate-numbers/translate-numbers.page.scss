@@ -1,0 +1,14 @@
+ion-item{
+    margin: 10px;
+}   
+ion-button{
+    margin: 10px;
+    padding: 10px;
+}
+
+ion-content{
+    content: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
