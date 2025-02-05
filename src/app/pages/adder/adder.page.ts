@@ -12,8 +12,8 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonButton, IonInput, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonicModule, IonLabel, IonImg]
 })
 export class AdderPage implements OnInit {
-  num1: number = 0;  
-  num2: number = 0;
+  num1?: number;  
+  num2?: number;
   result?: number;
 
   constructor() { }
